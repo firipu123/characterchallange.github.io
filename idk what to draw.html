@@ -1,0 +1,234 @@
+<html>
+<body bgcolor="#fcaef3"></body>
+<body>
+<h1 class="cooltext3">Character Challenge</h1>
+<h2 class="cooltext2">by FiriPu</h2>
+<h1 class="cooltext" id="hair" style="button" onclick="hairo()">Hair</h1>
+<h1 class="cooltext" id="eyes" style="button" onclick="eyeso()">Eyes</h1>
+<h1 class="cooltext" id="head" style="button" onclick="heado()">Head</h1>
+<h1 class="cooltext" id="object" style="button" onclick="objecto()">Object</h1>
+<h1 class="cooltext" id="accesories" style="button" onclick="accesorieso()">Accesories</h1>
+<h1 class="cooltext" id="arms" style="button" onclick="armso()">Arms</h1>
+<h1 class="cooltext" id="legs" style="button" onclick="legso()">Legs</h1>
+<button class="coolbutton" onclick="hairo()">hair</button>
+<button class="coolbutton" onclick="eyeso()">eyes</button>
+<button class="coolbutton" onclick="heado()">head</button>
+<button class="coolbutton" onclick="objecto()">object</button>
+<button class="coolbutton" onclick="accesorieso()">accesories</button>
+<button class="coolbutton" onclick="armso()">arms</button>
+<button class="coolbutton" onclick="legso()">legs</button>
+<button class="coolbutton2" onclick="activate()">activate all</button>
+<style>
+.cooltext3 {
+	font-family:Courier;
+    text-align:center;
+    font-size:40;
+    color:fcddff;
+}
+
+.cooltext2 {
+	font-family:Courier;
+    text-align:center;
+    color:fcddff;
+}
+
+.cooltext {
+	font-family:Arial;
+    font-size:36;
+    text-align:center;
+    color:white;
+}
+
+.coolbutton2 {
+	background-color:transparent;
+	-moz-border-radius:22px;
+	-webkit-border-radius:22px;
+	border-radius:22px;
+	border:4px solid #ff0000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ff5c5c;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #662866;
+}
+.coolbutton2:hover {
+	background-color:transparent;
+}
+.coolbutton2:active {
+	position:relative;
+	top:1px;
+	width: 150px;
+  	text-align: center;
+  	margin:0 auto;
+}
+
+.coolbutton {
+	background-color:transparent;
+	-moz-border-radius:22px;
+	-webkit-border-radius:22px;
+	border-radius:22px;
+	border:4px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #662866;
+	width: 150px;
+  	text-align: center;
+  	margin:0 auto;
+}
+.coolbutton:hover {
+	background-color:transparent;
+}
+.coolbutton:active {
+	position:relative;
+	top:1px;
+}
+</style>
+<script>
+var haira = "Your hair color is ";
+var eyesa = "Your eyes are ";
+var heada = "Your head is "
+var objecta = "The object that your holding is ";
+var accesoriesa = "You have a ";
+var armsa = "You have ";
+var hair = document.getElementById("hair");
+var eyes = document.getElementById("eyes");
+var head = document.getElementById("head");
+var object = document.getElementById("object");
+var accesories = document.getElementById("accesories");
+var arms = document.getElementById("arms");
+var legs = document.getElementById("legs");
+var random = Math.floor(Math.random() * 6);
+var random2 = Math.floor(Math.random() * 3);
+var random3 = Math.floor(Math.random() * 4);
+var random4 = Math.floor(Math.random() * 5);
+var random5 = Math.floor(Math.random() * 4);
+var random6 = Math.floor(Math.random() * 5);
+var random7 = Math.floor(Math.random() * 5);
+
+function hairo(){
+	random = Math.floor(Math.random() * 6);
+    hair.innerHTML = random;
+    if (random == 0){
+    	hair.innerHTML = haira + "red";
+    }else if (random == 1){
+    	hair.innerHTML = haira + "orange";
+    }else if (random == 2){
+    	hair.innerHTML = haira + "yellow";
+    }else if (random == 3){
+    	hair.innerHTML = haira + "blue";
+    }else if (random == 4){
+    	hair.innerHTML = haira + "pink";
+    }else if (random == 5){
+    	hair.innerHTML = haira + "purple";
+    }
+}
+
+function eyeso(){
+	random2 = Math.floor(Math.random() * 3);
+    eyes.innerHTML = random2
+    if (random2 == 0){
+    	eyes.innerHTML = eyesa + "round";
+    }else if (random2 == 1){
+    	eyes.innerHTML = eyesa + "square";
+    }else if (random2 == 2){
+    	eyes.innerHTML = eyesa + "triangle";
+    }
+}
+
+function heado(){
+	random3 = Math.floor(Math.random() * 4);
+    head.innerHTML = random3;
+    if (random3 == 0){
+   		head.innerHTML = heada + "round";
+    }else if (random3 == 1){
+    	head.innerHTML = heada + "oval";
+    }else if (random3 == 2){
+    	head.innerHTML = heada + "square";
+    }else if (random3 == 3){
+    	head.innerHTML = heada + "triangle";
+    }
+}
+
+function objecto(){
+	random4 = Math.floor(Math.random() * 5);
+    object.innerHTML = random4;
+    if (random4 == 0){
+    	object.innerHTML = objecta + "nothing";
+    }else if (random4 == 1){
+    	object.innerHTML = objecta + "phone";
+    }else if (random4 == 2){
+    	object.innerHTML = objecta + "ipad";
+    }else if (random4 == 3){
+    	object.innerHTML = objecta + "pizza";
+    }else if (random4 == 4){
+    	object.innerHTML = objecta + "umbrella";
+    }
+}
+
+function accesorieso(){
+	random5 = Math.floor(Math.random() * 4);
+    accesories.innerHTML = random5;
+    if (random5 == 0){
+    	accesories.innerHTML = accesoriesa + "top hat";
+    }else if (random5 == 1){
+    	accesories.innerHTML = accesoriesa + "round glasses";
+    }else if (random5 == 2){
+    	accesories.innerHTML = accesoriesa + "square glasses";
+    }else if (random5 == 3){
+    	accesories.innerHTML = accesoriesa + "fadora";
+    }
+}
+
+function armso(){
+	random6 = Math.floor(Math.random() * 5);
+    arms.innerHTML = random6;
+    if (random6 == 0){
+    	arms.innerHTML = armsa + " 1 " + " arms";
+    }else if (random6 == 1){
+    	arms.innerHTML = armsa + " 2 " + " arms";
+    }else if (random6 == 2){
+    	arms.innerHTML = armsa + " 3 " + " arms";
+    }else if (random6 == 3){
+    	arms.innerHTML = armsa + " 4 " + " arms";
+    }else if (random6 == 4){
+    	arms.innerHTML = armsa + " 6 " + " arms";
+    }
+}
+
+function legso(){
+	random7 = Math.floor(Math.random() * 5);
+    legs.innerHTML = random7;
+    if (random7 == 0){
+    	legs.innerHTML = "You have " + " 1 " + " leg";
+    }else if (random7 == 1){
+    	legs.innerHTML = "You have " + " 2 " + " legs";
+    }else if (random7 == 2){
+    	legs.innerHTML = "You have " + " 3 " + " legs";
+    }else if (random7 == 3){
+    	legs.innerHTML = "You have " + " 4 " + " legs";
+    }else if (random7 == 4){
+    	legs.innerHTML = "You have " + " 6 " + " legs";
+    }
+}
+
+
+function activate(){
+	legso()
+	hairo()
+    eyeso()
+    heado()
+    objecto()
+    accesorieso()
+    armso()
+}
+</script>
+</body>
+</html>
